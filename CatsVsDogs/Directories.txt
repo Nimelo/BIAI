@@ -1,0 +1,2 @@
+@"E:\GitHubRepo\BIAI\CatsVsDogs\ConsoleApplication\bin\Debug\SomeCats"
+@"E:\Uczelnia\sem6\BIAI\train\train"
