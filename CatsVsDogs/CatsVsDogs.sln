@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{17C573FE-B11A-4CB5-9B50-C9626A046D3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DT", "ConsoleApplication\DT.csproj", "{17C573FE-B11A-4CB5-9B50-C9626A046D3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A696FFC3-25D3-4A72-ADAA-9D1F50C90174}"
 EndProject
@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6E2447
 	ProjectSection(SolutionItems) = preProject
 		Directories.txt = Directories.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVMTextClassifier", "..\..\..\Uczelnia\sem6\BIAI\Libraries\svmtutorial-master\svmtutorial-master\Csharp\SVM_Text_Classifier\SVM_Text_Classifier\SVMTextClassifier.csproj", "{E5F69493-7591-4775-A71D-C44B9002F362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{EA040532-3D3D-4413-B9F0-50689EFE2E32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,26 @@ Global
 		{A696FFC3-25D3-4A72-ADAA-9D1F50C90174}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A696FFC3-25D3-4A72-ADAA-9D1F50C90174}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A696FFC3-25D3-4A72-ADAA-9D1F50C90174}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E5F69493-7591-4775-A71D-C44B9002F362}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EA040532-3D3D-4413-B9F0-50689EFE2E32}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

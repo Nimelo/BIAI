@@ -55,9 +55,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication\ConsoleApplication.csproj">
+    <ProjectReference Include="..\ConsoleApplication\DT.csproj">
       <Project>{17c573fe-b11a-4cb5-9b50-c9626a046d3f}</Project>
-      <Name>ConsoleApplication</Name>
+      <Name>DT</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
