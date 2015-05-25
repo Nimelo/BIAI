@@ -2,7 +2,7 @@
 # Imports
 #
 import numpy as np
-
+import csv
 
 # Transfer functions
 def sgm(x, Derivative=False):
@@ -20,15 +20,15 @@ def linear(x, Derivative=False):
 
 def gaussian(x, Derivative=False):
      if not Derivative:
-        return np.exp(-x**2)
+        return np.exp(-x ** 2)
      else:
-        return -2*x*np.exp(-x**2)
+        return -2 * x * np.exp(-x ** 2)
 
 def tanh(x, Derivative=False):
     if not Derivative:
         return np.tanh(x)
     else:
-        return 1.0 - np.tanh(x)**2
+        return 1.0 - np.tanh(x) ** 2
 
 #
 # Classes
@@ -46,7 +46,7 @@ class BackPropagationNetwork:
     #
     #Class methods
     #
-    def __init__(self, layerSize, layerFunctions = None):
+    def __init__(self, layerSize, layerFunctions=None):
         """Initialize the network"""
 
         # Layer info
@@ -77,7 +77,7 @@ class BackPropagationNetwork:
         # Create the weight arrays
         for(l1, l2) in zip(layerSize[:-1], layerSize[1:]):
             self.weights.append(np.random.normal(scale =0.1, size = (l2, l1 + 1)))
-            self._perviousWeightDelta.append(np.zeros((l2, l1+1)))
+            self._perviousWeightDelta.append(np.zeros((l2, l1 + 1)))
 
     # Run method
 
@@ -104,7 +104,7 @@ class BackPropagationNetwork:
 
     #TrainEpoch method
 
-    def TrainEpoch(self, input, target, trainingRate=0.2, momentum = 0.5):
+    def TrainEpoch(self, input, target, trainingRate=0.2, momentum=0.5):
         """This method trains the netwokr for one epoch"""
 
         delta = []
@@ -150,27 +150,62 @@ class BackPropagationNetwork:
 # If run as a script, create a test object
 if __name__ == "__main__":
     
-    #print(bpn.shape)
-    #print bpn.weights
+    data = []
+    tab = []
 
-    lvInput = np.array([[-1,1],[1,1], [-1, -1], [1, -1], [1, 4]])
-    lvTarget = np.array([[0], [2], [-2], [0], [5]])
-    lFuncs = [None, sgm, sgm, linear]
+    for i in range(2 * 10000):
+        tab.append(i)
+    #    data.append([i, i % 2])
 
-    bpn = BackPropagationNetwork((2,2,2,1), lFuncs)
+    #with open('test.csv', 'w') as file:
+    #    writter = csv.writer(file)
+    #    writter.writerows(data);
+    
+    bpn = BackPropagationNetwork((1,1), [None, sgm])
+    #for i in range(1):
+    #    print 'iteration ' + str(i)
+    #    with open('test.csv', 'rb') as f:
+    #        reader = csv.reader(f)
+    #        for row in reader:   
+    #            for j in range(1):          
+    #                bpn.TrainEpoch(np.array([int(row[0])]),np.array([int(row[1])]) , momentum = 0.1)      
+    
+    for it in tab:
+        bpn.TrainEpoch(np.array([it]), np.array([it % 2]))     
+    ##print(bpn.shape)
+    ##print bpn.weights
 
-    lnMax = 100000
-    lnErr = 1e-5
-    for i in range(lnMax+1):
-        err = bpn.TrainEpoch(lvInput, lvTarget, momentum = 0.1)
-        if i % 2500 == 0:
-            print("Iteration {0}\tError: {1:0.6f}".format(i,err))
-        if err <= lnErr:
-            print("Minimum error reached at iteration {0}".format(i))
-            break
+    #lvInput = np.array([[-1],[1], [4], [6], [-8]])
+    #lvTarget = np.array([[0], [1], [1], [1], [0]])
+    #lFuncs = [None, sgm]
 
-    lvRun = np.array([[4,-5],[41,1]])
+    
+
+    #lnMax = 10000#0
+    #lnErr = 1e-5
+    #for i in range(lnMax + 1):
+    #    err = bpn.TrainEpoch(lvInput, lvTarget, momentum = 0.1)
+    #    if i % 2500 == 0:
+    #        print("Iteration {0}\tError: {1:0.6f}".format(i,err))
+    #    if err <= lnErr:
+    #        print("Minimum error reached at iteration {0}".format(i))
+    #        break
+
+    lvRun = np.array([tab]).T
     lvOutput = bpn.Run(lvRun)
+    temp = []
+    ileOk = 0
+    for item in range(0,len(lvOutput)):          
+        if item % 2 == round(lvOutput[item]):
+            ileOk += 1
+        temp.append([item, lvOutput[item]])
+
+    with open('test_output1x20kx10.csv', 'w') as file:  
+        writter = csv.writer(file)   
+        writter.writerows(temp)
+        
+
+    print ileOk
     # Display output
-    for i in range(lvRun.shape[0]):
-        print("Input: {0} Output: {1}".format(lvRun[i], lvOutput[i]))
+    #for i in range(lvRun.shape[0]):
+    #    print("Input: {0} Output: {1}".format(lvRun[i], round(lvOutput[i])))

@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>69b33c10-b145-4602-8c09-bc2244717b4f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NeuralNetwork.py</StartupFile>
+    <StartupFile>NN2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="NeuralNetwork.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NN2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonApplication.py" />
