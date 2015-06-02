@@ -18,6 +18,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csp
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication", "PythonApplication\PythonApplication.pyproj", "{69B33C10-B145-4602-8C09-BC2244717B4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NN", "NN\NN.csproj", "{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC33FFCC-84DE-4071-AA3F-280DF25A8143}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +81,16 @@ Global
 		{69B33C10-B145-4602-8C09-BC2244717B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69B33C10-B145-4602-8C09-BC2244717B4F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{69B33C10-B145-4602-8C09-BC2244717B4F}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5B488CCE-DE5F-4D25-BEDF-C0F3DE43C450}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

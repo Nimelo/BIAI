@@ -1,2 +1,7 @@
 @"E:\GitHubRepo\BIAI\CatsVsDogs\ConsoleApplication\bin\Debug\SomeCats"
 @"E:\Uczelnia\sem6\BIAI\train\train"
+
+http://stackoverflow.com/questions/14694810/using-opencv-and-svm-with-images
+
+
+For my first approach, I used the Mahotas library to get a 4*13 matrix of Haralick texture features for the entire image.  The texture features are described in a 1973 paper and the author describes building a decision tree.  Then I used sklearn library's logistic regression (which is implemented using liblinear) to classify.  I got a score of 0.64480 which is a lot better than random even though not so great overall.
