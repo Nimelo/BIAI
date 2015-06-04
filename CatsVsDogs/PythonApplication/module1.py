@@ -35,10 +35,6 @@ negatives = glob('E:/Uczelnia/sem6/BIAI/train/cats/*.jpg')
 print("Loading unlabeled's globs")
 unlabeled = glob('E:/Uczelnia/sem6/BIAI/test1/test1/*.jpg')
 
-#positives = positives[:1000]
-#negatives = negatives[:1000]
-#unlabeled = unlabeled[]
-
 f = []
 
 iterator = 0
@@ -48,18 +44,13 @@ for i in negatives + positives:
         print("Iteration:", iterator, time.time() - start_time) 
     iterator+=1
 
-#features = map(features_for, negatives + positives)
 labels = [0] * len(negatives) + [1] * len(positives)
 
 print("Start learining")
 learining_time = time.time()
 model = learn_model(f, labels)
 print("Learned in:", time.time() - learining_time)
-  
-#labeled = [classify(model, features_for(u)) for u in unlabeled[:1]]
 
-#feature = features_for(unlabeled[0])
-#label = classify(model, feature)
 
 cats = 0
 dogs = 0

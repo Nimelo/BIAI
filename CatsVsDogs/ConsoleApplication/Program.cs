@@ -30,8 +30,8 @@ namespace ConsoleApplication
             int shred = 10;
             var bmp = bmps.First().ResizeImage(400, 350).ShredImage(shred).Average().Merge(new Size(400, 350), new Size(shred, shred));
 
-            bmp.Convert2GrayScaleFast();
-            bmp.threshold(bmp.getOtsuThreshold());
+           // bmp.Convert2GrayScaleFast();
+           // bmp.threshold(bmp.getOtsuThreshold());
 
             bmp.Save("tmp.bmp");
             Display(bmp);

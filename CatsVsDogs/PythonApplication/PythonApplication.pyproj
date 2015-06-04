@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>69b33c10-b145-4602-8c09-bc2244717b4f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module1.py</StartupFile>
+    <StartupFile>Old Staff\HaralickTextureFeaturesExtraction.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,26 +25,32 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="countures.py">
+    <Compile Include="Old Staff\countures.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="haariMainpy.py">
+    <Compile Include="Old Staff\haariMainpy.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="module1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NeuralNetwork.py">
+    <Compile Include="Old Staff\HaralickTextureFeaturesExtraction.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NN2.py">
+    <Compile Include="Old Staff\NeuralNetwork.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PythonApplication.py" />
+    <Compile Include="Old Staff\NN2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Old Staff\PythonApplication.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Old Staff\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
