@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>69b33c10-b145-4602-8c09-bc2244717b4f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Old Staff\HaralickTextureFeaturesExtraction.py</StartupFile>
+    <StartupFile>SVM.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,10 +31,10 @@
     <Compile Include="Old Staff\haariMainpy.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="module1.py">
+    <Compile Include="SVM.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Old Staff\HaralickTextureFeaturesExtraction.py">
+    <Compile Include="HaralickTextureFeaturesExtraction.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Old Staff\NeuralNetwork.py">
